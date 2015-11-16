@@ -18,27 +18,28 @@
 
 	<link href="{{ asset('/bower_components/font-awesome/css/font-awesome.css') }}" rel="stylesheet" type="text/css">
 	
-	<link href="{{ asset('/thema/assets-frontend/css/style-theme.css') }}" rel="stylesheet" type="text/css">
-	<link href="{{ asset('/thema/assets-frontend/css/style-responsive-theme.css') }}" rel="stylesheet" type="text/css">
-	<!-- Thema CSS -->
-	<link href="{{ asset('/thema/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css') }}" rel="stylesheet" />
-	<link href="{{ asset('/thema/assets-frontend/css/animate.min.css') }}" rel="stylesheet" />
-	<link href="{{ asset('/thema/assets-frontend/css/style.min.css') }}" rel="stylesheet" />
-	<link href="{{ asset('/thema/assets-frontend/css/style-responsive.min.css') }}" rel="stylesheet" />
-	<link href="{{ asset('/thema/assets-frontend/css/theme/default.css') }}" id="theme" rel="stylesheet" />
-	<!-- ================== END BASE CSS STYLE ================== -->
+	<!-- CCS Thema Admin modificado -->
+	<link href="{{ asset('/thema/frontend/one-page-parallax/assets/css/admin/style-admin.min.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ asset('/thema/frontend/one-page-parallax/assets/css/admin/style-responsive-admin.min.css') }}" rel="stylesheet" type="text/css">
 	
-	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
-  	<link href="{{ asset('/thema/assets/plugins/isotope/isotope.css') }}" rel="stylesheet" />
-  	<link href="{{ asset('/thema/assets/plugins/lightbox/css/lightbox.css') }}" rel="stylesheet" />
-	<!-- ================== END PAGE LEVEL STYLE ================== -->
+	<!-- Thema Admin CSS  -->
+	<link href="{{ asset('/thema/admin/html/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css') }}" rel="stylesheet" />
+	<link href="{{ asset('/thema/admin/html/assets/plugins/isotope/isotope.css') }}" rel="stylesheet" />
+  	<link href="{{ asset('/thema/admin/html/assets/plugins/lightbox/css/lightbox.css') }}" rel="stylesheet" />
+	
+	<!-- Thema Frontend CSS  -->
+	<link href="{{ asset('/thema/frontend/one-page-parallax/assets/css/animate.min.css') }}" rel="stylesheet" />
+	<link href="{{ asset('/thema/frontend/one-page-parallax/assets/css/style.min.css') }}" rel="stylesheet" />
+	<link href="{{ asset('/thema/frontend/one-page-parallax/assets/css/style-responsive.min.css') }}" rel="stylesheet" />
+	<link href="{{ asset('/thema/frontend/one-page-parallax/assets/css/theme/default.css') }}" id="theme" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
 	
 	<!-- ================== gallery ================== -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('/scatteredpolaroidsgallery/css/component.css') }}" />
 	<script src="{{ asset('/scatteredpolaroidsgallery/js/modernizr.min.js') }}"></script>
 
 	<!-- ================== BEGIN BASE JS ================== -->
-	<script src="{{ asset('/thema/assets-frontend/plugins/pace/pace.min.js') }}"></script>
+	<script src="{{ asset('/thema/frontend/one-page-parallax/assets/plugins/pace/pace.min.js') }}"></script>
 	<!-- ================== END BASE JS ================== -->
 
 	<link href="{{ asset('/css/style.css') }}" rel="stylesheet">
@@ -51,7 +52,9 @@
     <!-- jquery modules -->
     <script src="{{ asset('/bower_components/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('/bower_components/jquery-migrate/jquery-migrate.min.js') }}"></script>
-    <script src="{{ asset('/thema/assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js') }}"></script>
+    
+	<!-- Thema Admin JS  -->
+    <script src="{{ asset('/thema/admin/html/assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js') }}"></script>
 
 	<!-- bootstrap modules -->
     <script src="{{ asset('/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
@@ -75,16 +78,18 @@
 	<!-- bootstrap jasny-->
     <script src="{{ asset('/bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js') }}"></script>
 	
-	<!-- Thema JS -->
-	<script src="{{ asset('/thema/assets-frontend/plugins/jquery-cookie/jquery.cookie.js') }}"></script>
-	<script src="{{ asset('/thema/assets-frontend/plugins/scrollMonitor/scrollMonitor.js') }}"></script>
+	<!-- Thema JS Frontend -->
+	<script src="{{ asset('/thema/frontend/one-page-parallax/assets/plugins/jquery-cookie/jquery.cookie.js') }}"></script>
+	<script src="{{ asset('/thema/frontend/one-page-parallax/assets/plugins/scrollMonitor/scrollMonitor.js') }}"></script>
 	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
-	<script src="{{ asset('/thema/assets/plugins/isotope/jquery.isotope.min.js') }}"></script>
-  	<script src="{{ asset('/thema/assets/plugins/lightbox/js/lightbox-2.6.min.js') }}"></script>
-	<script src="{{ asset('/thema/assets/js/gallery.demo.min.js') }}"></script>
-	<!-- ================== END PAGE LEVEL JS ================== -->
+
+	<!-- Thema Admin JS  -->
+	<script src="{{ asset('/thema/admin/html/assets/plugins/isotope/jquery.isotope.min.js') }}"></script>
+  	<script src="{{ asset('/thema/admin/html/assets/plugins/lightbox/js/lightbox-2.6.min.js') }}"></script>
+	<script src="{{ asset('/thema/admin/html/assets/js/gallery.demo.min.js') }}"></script>
 	
-	<script src="{{ asset('/thema/assets-frontend/js/apps.min.js') }}"></script>
+	<!-- Thema Frontend JS -->
+	<script src="{{ asset('/thema/frontend/one-page-parallax/assets/js/apps.min.js') }}"></script>
 	
 	<!-- ================== Gallery ================== -->
 	<script src="{{ asset('/scatteredpolaroidsgallery/js/classie.js') }}"></script>
