@@ -6,7 +6,7 @@
 		<ul class="nav">
 			<li class="nav-profile">
 				<div class="image">
-					<a href="javascript:;"><img src="{{ url('/thema/assets/img/user-13.jpg')}}" alt="" /></a>
+					<a href="javascript:;"><img src="{{ url('/thema/admin/html/assets/img/user-13.jpg')}}" alt="" /></a>
 				</div>
 				<div class="info">
 					Sean Ngu
