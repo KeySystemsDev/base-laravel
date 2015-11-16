@@ -15,17 +15,17 @@
 
 	<!-- Fonts -->
 	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<!-- bootstrap modules style -->
+    <link href="{{ asset('/bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
 
+	<!-- Iconos -->
 	<link href="{{ asset('/bower_components/font-awesome/css/font-awesome.css') }}" rel="stylesheet" type="text/css">
 	
 	<!-- CCS Thema Admin modificado -->
+	<link href="{{ asset('/thema/admin/html/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css') }}" rel="stylesheet" />
 	<link href="{{ asset('/thema/frontend/one-page-parallax/assets/css/admin/style-admin.min.css') }}" rel="stylesheet" type="text/css">
 	<link href="{{ asset('/thema/frontend/one-page-parallax/assets/css/admin/style-responsive-admin.min.css') }}" rel="stylesheet" type="text/css">
-	
-	<!-- Thema Admin CSS  -->
-	<link href="{{ asset('/thema/admin/html/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css') }}" rel="stylesheet" />
-	<link href="{{ asset('/thema/admin/html/assets/plugins/isotope/isotope.css') }}" rel="stylesheet" />
-  	<link href="{{ asset('/thema/admin/html/assets/plugins/lightbox/css/lightbox.css') }}" rel="stylesheet" />
 	
 	<!-- Thema Frontend CSS  -->
 	<link href="{{ asset('/thema/frontend/one-page-parallax/assets/css/animate.min.css') }}" rel="stylesheet" />
@@ -34,10 +34,11 @@
 	<link href="{{ asset('/thema/frontend/one-page-parallax/assets/css/theme/default.css') }}" id="theme" rel="stylesheet" />
 	<!-- ================== END BASE CSS STYLE ================== -->
 	
-	<!-- ================== gallery ================== -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('/scatteredpolaroidsgallery/css/component.css') }}" />
-	<script src="{{ asset('/scatteredpolaroidsgallery/js/modernizr.min.js') }}"></script>
-
+	<!-- Thema Admin CSS  -->
+	
+	<link href="{{ asset('/thema/admin/html/assets/plugins/isotope/isotope.css') }}" rel="stylesheet" />
+  	<link href="{{ asset('/thema/admin/html/assets/plugins/lightbox/css/lightbox.css') }}" rel="stylesheet" />
+	
 	<!-- ================== BEGIN BASE JS ================== -->
 	<script src="{{ asset('/thema/frontend/one-page-parallax/assets/plugins/pace/pace.min.js') }}"></script>
 	<!-- ================== END BASE JS ================== -->
@@ -45,7 +46,7 @@
 	<link href="{{ asset('/css/style.css') }}" rel="stylesheet">
 
 </head>
-<body data-spy="scroll" data-target="#header-navbar" data-offset="51">
+<body>
 	
 	@yield('content')
 
@@ -91,16 +92,13 @@
 	<!-- Thema Frontend JS -->
 	<script src="{{ asset('/thema/frontend/one-page-parallax/assets/js/apps.min.js') }}"></script>
 	
-	<!-- ================== Gallery ================== -->
-	<script src="{{ asset('/scatteredpolaroidsgallery/js/classie.js') }}"></script>
-	<script src="{{ asset('/scatteredpolaroidsgallery/js/photostack.js') }}"></script>
-
 	<!-- ===================== ANGULAR CONTROLLERS ==============================-->
 	@yield('controller')
 	
 	<script>
 		$(document).ready(function() {
 			App.init();
+			Gallery.init();
 		});
 	</script>
 	

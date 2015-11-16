@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'IndexClienteController@index');
+Route::get('gallery', 'GalleryController@gallery');
 
 Route::get('index-admin', 'IndexAdminController@index');
 
